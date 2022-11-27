@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+header .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px;
+    border-bottom: 1px solid #6495ED ;
+    background-color: #6495ed;
+}
+
+header li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+    font-weight: bold;
+    color:white;
+    font-size: 18px;
+}
+
+header li:hover{
+    cursor: pointer;
+}
+
+.destaque img{
+    max-width: 40%;
+    display: flex;
+    margin-top: 25px;
+}
+
+.conteudo h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    border-bottom: 1px solid #6495ED;
+    color: #6495ED;
+}
+
+.conteudo p{
+    margin-top: 16px;
+    font-weight: bold;
+    text-align:left;
+    font-size: 19px;
+}
+
+.sapatos img{
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#tipo{
+    margin-top: 50px;
+    border-bottom: 1px solid #6495ED;
+    color: #6495ED;
+    margin-bottom: 25px;
+}
+
+.produtos .sapatos img{
+    margin-right: 8px;
+}
+.sapatos{
+    margin-left: 8px;
+}
+
+.sapatos img{
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+}
+
+.sapatos h4{
+    font-size: 16px;
+}
+
+.sapatos p {
+    font-size: 12px;
+}
+
+.sapatos button{
+    padding: 10px;
+    background-color: #6495ED;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque img{
+        margin-right: 0px;
+    }
+    .produtos{
+        display: block;
+    }
+
+    .produtos .sapatos{
+        margin-bottom: 32px;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    .menu > li{
+        clear:both;
+    }
+
+    .sapatos buttom{
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos .sapatos a{
+        font-size: 1.5em;
+    }
+
+.produtos{
+    grid-template-columns: repeat(2, 49%);
+}
+}
